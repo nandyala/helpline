@@ -14,8 +14,8 @@
 		<!--<Logger name="org.hibernate.SQL" level="debug"/>-->
 		<Logger name="org.springframework" level="warn"/>
         <Logger name="com.gargoylesoftware.htmlunit" level="error"/>
-		<Logger name="com.ashakiran" level="debug"/>
-		<Logger name="com.ashakiran.tool" level="info"/>
+		<Logger name="org.ashakiran" level="debug"/>
+		<Logger name="org.ashakiran.tool" level="info"/>
 
 		<Root level="warn">
 			<AppenderRef ref="Console" />

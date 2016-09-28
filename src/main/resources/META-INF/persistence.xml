@@ -3,7 +3,7 @@
 
     <persistence-unit name="ApplicationEntityManager" transaction-type="RESOURCE_LOCAL">
         <provider>org.hibernate.ejb.HibernatePersistence</provider>
-        <class>com.ashakiran.model.User</class>
-        <class>com.ashakiran.model.Role</class>
+        <class>org.ashakiran.model.User</class>
+        <class>org.ashakiran.model.Role</class>
     </persistence-unit>
 </persistence>

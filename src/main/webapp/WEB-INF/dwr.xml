@@ -6,6 +6,6 @@
             <param name="beanName" value="userManager"/>
             <include method="getUsers"/>
         </create>
-        <convert converter="bean" match="com.ashakiran.model.User"/-->
+        <convert converter="bean" match="User"/-->
     </allow>
 </dwr>

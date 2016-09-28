@@ -23,7 +23,7 @@
 
     <artifactId>helpline</artifactId>
 
-    <groupId>com.ashakiran</groupId>
+    <groupId>org.ashakiran</groupId>
     <packaging>war</packaging>
     <version>1.0-SNAPSHOT</version>
     <name>AppFuse Light Spring MVC/Security Module</name>

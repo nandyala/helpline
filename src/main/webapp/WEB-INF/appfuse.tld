@@ -10,7 +10,7 @@
     <uri>http://www.appfuse.org/tags/spring</uri>
     <tag>
         <name>label</name>
-        <tag-class>com.ashakiran.webapp.taglib.LabelTag</tag-class>
+        <tag-class>org.ashakiran.webapp.taglib.LabelTag</tag-class>
         <body-content>JSP</body-content>
         <attribute>
             <name>key</name>

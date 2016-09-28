@@ -33,7 +33,7 @@
 
     <filter>
         <filter-name>messageFilter</filter-name>
-        <filter-class>com.ashakiran.webapp.MessageFilter</filter-class>
+        <filter-class>org.ashakiran.webapp.MessageFilter</filter-class>
     </filter>
 
     <!--<filter>
