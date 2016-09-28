@@ -34,7 +34,7 @@ import org.springframework.security.core.GrantedAuthority;
     )
   }
 )
-@Table(name = "role")
+@Table(name = "Role")
 public class Role extends BaseObject implements Serializable, GrantedAuthority {
   //~ Static fields/initializers ---------------------------------------------------------------------------------------
 

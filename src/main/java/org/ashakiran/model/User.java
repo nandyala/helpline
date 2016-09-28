@@ -52,7 +52,7 @@ import org.springframework.security.core.userdetails.UserDetails;
  * @version  $Revision$, $Date$
  */
 @Entity @Indexed
-@Table(name = "app_user")
+@Table(name = "User")
 @XmlRootElement public class User extends BaseObject implements Serializable, UserDetails {
   //~ Static fields/initializers ---------------------------------------------------------------------------------------
 
@@ -302,7 +302,7 @@ import org.springframework.security.core.userdetails.UserDetails;
    */
   @Fetch(FetchMode.SELECT)
   @JoinTable(
-    name               = "user_role",
+    name               = "UserRole",
     joinColumns        = { @JoinColumn(name = "user_id") },
     inverseJoinColumns = @JoinColumn(name = "role_id")
   )
