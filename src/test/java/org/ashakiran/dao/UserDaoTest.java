@@ -4,7 +4,7 @@ import java.util.List;
 
 import org.ashakiran.Constants;
 
-import org.ashakiran.model.Address;
+import org.ashakiran.model.BaseAddress;
 import org.ashakiran.model.Role;
 import org.ashakiran.model.User;
 
@@ -47,7 +47,7 @@ public class UserDaoTest extends BaseDaoTestCase {
     user.setFirstName("Test");
     user.setLastName("Last");
 
-    Address address = new Address();
+    BaseAddress address = new BaseAddress();
     address.setCity("Denver");
     address.setProvince("CO");
     address.setCountry("USA");
@@ -165,7 +165,7 @@ public class UserDaoTest extends BaseDaoTestCase {
   public void testUpdateUser() throws Exception {
     User user = dao.get(-1L);
 
-    Address address = user.getAddress();
+    BaseAddress address = user.getAddress();
     address.setAddress("new address");
 
     dao.saveUser(user);

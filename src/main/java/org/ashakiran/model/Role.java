@@ -35,7 +35,7 @@ import org.springframework.security.core.GrantedAuthority;
   }
 )
 @Table(name = "Role")
-public class Role extends BaseObject implements Serializable, GrantedAuthority {
+public class Role extends AbstractBaseObject implements Serializable, GrantedAuthority {
   //~ Static fields/initializers ---------------------------------------------------------------------------------------
 
   private static final long serialVersionUID = 3690197650654049848L;

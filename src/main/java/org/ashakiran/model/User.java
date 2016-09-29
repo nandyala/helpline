@@ -60,21 +60,21 @@ import org.springframework.security.core.userdetails.UserDetails;
 
   //~ Instance fields --------------------------------------------------------------------------------------------------
 
-  private boolean accountExpired;
-  private boolean accountLocked;
-  private Address address            = new Address();
-  private String  confirmPassword;
-  private boolean credentialsExpired;
-  private String  email;     // required; unique
-  private boolean enabled;
-  private String  firstName; // required
+  private boolean     accountExpired;
+  private boolean     accountLocked;
+  private BaseAddress address            = new BaseAddress();
+  private String      confirmPassword;
+  private boolean     credentialsExpired;
+  private String      email; // required; unique
+  private boolean     enabled;
+  private String      firstName; // required
 
   private Long      id;
   private String    lastName; // required
   private String    password; // required
   private String    passwordHint;
   private String    phoneNumber;
-  private Set<Role> roles            = new HashSet<Role>();
+  private Set<Role> roles                = new HashSet<Role>();
   private String    username; // required
   private Integer   version;
   private String    website;
@@ -133,7 +133,7 @@ import org.springframework.security.core.userdetails.UserDetails;
    *
    * @return  DOCUMENT ME!
    */
-  @Embedded @IndexedEmbedded public Address getAddress() {
+  @Embedded @IndexedEmbedded public BaseAddress getAddress() {
     return address;
   }
 
@@ -483,7 +483,7 @@ import org.springframework.security.core.userdetails.UserDetails;
    *
    * @param  address  DOCUMENT ME!
    */
-  public void setAddress(Address address) {
+  public void setAddress(BaseAddress address) {
     this.address = address;
   }
 

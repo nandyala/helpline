@@ -19,7 +19,7 @@ import org.hibernate.search.annotations.Indexed;
  * @author   <a href="mailto:matt@raibledesigns.com">Matt Raible</a>
  * @version  $Revision$, $Date$
  */
-@Embeddable @Indexed public class Address extends BaseObject implements Serializable {
+@Embeddable @Indexed public class BaseAddress extends AbstractBaseObject implements Serializable {
   //~ Static fields/initializers ---------------------------------------------------------------------------------------
 
   private static final long serialVersionUID = 3617859655330969141L;
@@ -46,11 +46,11 @@ import org.hibernate.search.annotations.Indexed;
       return true;
     }
 
-    if (!(o instanceof Address)) {
+    if (!(o instanceof BaseAddress)) {
       return false;
     }
 
-    final Address address1 = (Address) o;
+    final BaseAddress address1 = (BaseAddress) o;
 
     return this.hashCode() == address1.hashCode();
   }
@@ -204,4 +204,4 @@ import org.hibernate.search.annotations.Indexed;
         this.address).append("province", this.province).append("postalCode", this.postalCode).append("city", this.city)
       .toString();
   }
-} // end class Address
+} // end class BaseAddress

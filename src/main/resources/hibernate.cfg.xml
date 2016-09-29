@@ -8,5 +8,8 @@
     <session-factory>
         <mapping class="org.ashakiran.model.User"/>
         <mapping class="org.ashakiran.model.Role"/>
+        <mapping class="org.ashakiran.model.Grievance"/>
+        <mapping class="org.ashakiran.model.Department"/>
+        <mapping class="org.ashakiran.model.GrievanceType"/>
     </session-factory>
 </hibernate-configuration>
