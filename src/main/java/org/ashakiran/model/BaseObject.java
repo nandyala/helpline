@@ -29,7 +29,7 @@ import org.directwebremoting.convert.ObjectConverter;
 
   //~ Instance fields --------------------------------------------------------------------------------------------------
 
-  /** Create date. */
+  /** DOCUMENT ME! */
   @Column(
     name      = "createDate",
     nullable  = false,
